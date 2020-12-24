@@ -1,0 +1,18 @@
+/* PALETA DE CORES */ 
+.verde_claro{
+    color: #00CE81;
+}
+
+.verde_escuro{
+    color: #27AE60;
+}
+
+.azul_claro{
+    color: #76A9FF;
+}
+
+/* PAINEL DE PERGUNTAS */
+.perguntas .votos,
+.perguntas .respostas{
+    color: #00CE81;
+}
