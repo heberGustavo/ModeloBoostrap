@@ -1,5 +1,60 @@
-/* PALETA DE CORES */
+/* PALETA DE CORES */ 
+.verde_claro{
+    color: #00CE81 !important;
+}
 
+.verde_escuro{
+    color: #27AE60 !important;
+}
+
+.azul_claro{
+    color: #76A9FF !important;
+}
+
+.transparent{
+    color: transparent !important;
+}
+
+.btn-outline-success{
+    color: #27AE60 !important;
+}
+
+.btn-outline-success:hover{
+    background-color: #27AE60 !important;
+}
+
+/* MENU LATERAL */
+.accordion_custom .card {
+    border: 0;
+    border-radius: 0;
+    padding: 2px 0;
+}
+
+.accordion_custom .card-header {
+    padding: 3px 5px;
+    background-color: transparent;
+    border: 0;
+}
+
+.accordion_custom .card-header h5 a{
+    display: flex;
+}
+
+.accordion_custom .card-header h5 a:hover{
+    text-decoration: none;
+}
+
+.accordion_custom .card-header h5 a span{
+    align-self: center;
+    font-size: 16px;
+    color: black;
+}
+
+.accordion_custom .card-body{
+    padding: 0 0 0 10px;
+}
+
+/* PALETA DE CORES */
 .verde_claro {
     color: #00CE81;
 }
