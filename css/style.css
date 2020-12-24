@@ -54,8 +54,59 @@
     padding: 0 0 0 10px;
 }
 
-/* PAINEL DE PERGUNTAS */
-.perguntas .votos,
-.perguntas .respostas{
+/* PALETA DE CORES */
+.verde_claro {
     color: #00CE81;
+}
+
+.verde_escuro {
+    color: #27AE60;
+}
+
+.verde_escuro_background:hover {
+    background: #27AE60;
+    border: #27AE60;
+}
+
+.azul_claro {
+    color: #76A9FF;
+}
+
+
+/* PAINEL DE PERGUNTAS */
+
+.perguntas .votos,
+.perguntas .respostas {
+    color: #00CE81;
+}
+
+
+/* NAVBAR */
+
+.logo-img {
+    width: 97px;
+    margin: 0 15px;
+    height: 27px;
+}
+
+.form-control {
+    padding: .375rem 0.75rem;
+    width: 400px !important;
+}
+
+.btn-outline-success-search {
+    width: 60px !important;
+}
+
+.btn-outline-success-account {
+    margin: 0 5px;
+}
+
+.icon-language {
+    margin: 0 0 0 5px;
+}
+
+.card-img-top-header {
+    width: 30px;
+    margin: 0 10px;
 }
