@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Icones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Hello, world!</title>
@@ -21,36 +24,161 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                  </ul>
+                <button class="btn btn-outline-success d-block w-100">
+                    <span class="material-icons float-left">filter_list</span>
+                    Language
+                </button>
+                <br>
+                <div id="accordion" class="accordion_custom">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <a href="" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="material-icons verde_escuro">keyboard_arrow_down</span>
+                                    <span>Todas Linguagens</span>
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <span class="material-icons transparent">keyboard_arrow_right</span>
+                            <small>Ecommerce</small>
+                            <div class="card-body">
+
+                                <div id="accordion2" class="accordion_custom">
+                                    <div class="card">
+                                        <div class="card-header" id="heading1_1">
+                                            <h5 class="mb-0">
+                                                <a href="" data-toggle="collapse" data-target="#collapse1_1"
+                                                    aria-expanded="true" aria-controls="collapse1_1">
+                                                    <span class="material-icons verde_escuro">keyboard_arrow_right</span>
+                                                    <span>Mobile</span>
+                                                </a>
+                                            </h5>
+                                        </div>
+                
+                                        <div id="collapse1_1" class="collapse" aria-labelledby="heading1_1"
+                                            data-parent="#accordion2">
+                                            <div class="card-body">
+
+                                                <div id="accordion3" class="accordion_custom">
+                                                    <div class="card">
+                                                        <div class="card-header" id="heading1_1_1">
+                                                            <h5 class="mb-0">
+                                                                <a href="" data-toggle="collapse" data-target="#collapse1_1_1"
+                                                                    aria-expanded="true" aria-controls="collapse1_1_1">
+                                                                    <span class="material-icons verde_escuro">keyboard_arrow_down</span>
+                                                                    <span>Android</span>
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header" id="heading1_1_2">
+                                                            <h5 class="mb-0">
+                                                                <a href="" data-toggle="collapse" data-target="#collapse1_1_2"
+                                                                    aria-expanded="true" aria-controls="collapse1_1_2">
+                                                                    <span class="material-icons verde_escuro">keyboard_arrow_down</span>
+                                                                    <span>Iphone</span>
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading1_2">
+                                            <h5 class="mb-0">
+                                                <a href="" data-toggle="collapse" data-target="#collapse1_2"
+                                                    aria-expanded="true" aria-controls="collapse1_2">
+                                                    <span class="material-icons verde_escuro">keyboard_arrow_right</span>
+                                                    <span>Front-end</span>
+                                                </a>
+                                            </h5>
+                                        </div>
+                
+                                        <div id="collapse1_2" class="collapse" aria-labelledby="heading1_2"
+                                            data-parent="#accordion2">
+                                            <div class="card-body">
+                                                Item 2
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading1_3">
+                                            <h5 class="mb-0">
+                                                <a href="" data-toggle="collapse" data-target="#collapse1_3"
+                                                    aria-expanded="true" aria-controls="collapse1_3">
+                                                    <span class="material-icons verde_escuro">keyboard_arrow_right</span>
+                                                    <span>Back-end</span>
+                                                </a>
+                                            </h5>
+                                        </div>
+                
+                                        <div id="collapse1_3" class="collapse" aria-labelledby="heading1_3"
+                                            data-parent="#accordion2">
+                                            <div class="card-body">
+                                                Item 3
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading1_4">
+                                            <h5 class="mb-0">
+                                                <a href="" data-toggle="collapse" data-target="#collapse1_4"
+                                                    aria-expanded="true" aria-controls="collapse1_4">
+                                                    <span class="material-icons verde_escuro">keyboard_arrow_right</span>
+                                                    <span>Design</span>
+                                                </a>
+                                            </h5>
+                                        </div>
+                
+                                        <div id="collapse1_4" class="collapse" aria-labelledby="heading1_4"
+                                            data-parent="#accordion2">
+                                            <div class="card-body">
+                                                Item 4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="material-icons transparent">keyboard_arrow_down</span>
+                <button class="btn btn-outline-success">
+                    Expand
+                </button>
             </div>
             <div class="col-md-9 perguntas">
                 <div class="row">
                     <div class="col-md-12">
                         <h6>Google Drive API 500 Error on Wordpress plugin</h6>
-                        <p>I would like some help on how to debug a 500 error that comes from an AJAX request. I've built a Wordpress plugin that creates a folder and uploads files to Google Drive. It was working great on one ...</p>
+                        <p>I would like some help on how to debug a 500 error that comes from an AJAX request. I've
+                            built a Wordpress plugin that creates a folder and uploads files to Google Drive. It was
+                            working great on one ...</p>
                         <span class="votos">0 votes</span> <span class="respostas">0 answers</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
-        
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
