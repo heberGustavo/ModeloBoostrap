@@ -10,7 +10,6 @@
 
 .verde_escuro_background:hover {
     background: #27AE60;
-    border: #27AE60;
 }
 
 .azul_claro {
@@ -53,5 +52,6 @@
 
 .card-img-top-header {
     width: 30px;
+    height: 30px;
     margin: 0 10px;
 }
