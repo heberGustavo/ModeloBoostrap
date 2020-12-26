@@ -26,7 +26,6 @@
 
 
 /* MENU LATERAL */
-
 .accordion_custom .card {
     border: 0;
     border-radius: 0;
@@ -59,7 +58,6 @@
 
 
 /* PALETA DE CORES */
-
 .verde_claro {
     color: #00CE81;
 }
@@ -79,6 +77,27 @@
 
 
 /* PAINEL DE PERGUNTAS */
+.perguntas .item-pergunta{
+    padding: 15px;
+    border: 1px solid transparent;
+}
+
+.perguntas .item-pergunta:hover{
+    border: 1px solid #eee;
+}
+
+.perguntas .item-pergunta p{
+    margin-bottom: 5px;
+}
+
+a{
+    color: #000;
+    font-weight: 900;
+}
+
+a:hover{
+    color: #00CE81;
+}
 
 .perguntas .votos,
 .perguntas .respostas {
@@ -115,4 +134,19 @@
     width: 30px;
     height: 30px;
     margin: 0 10px;
+}
+
+/* MOBILE CARD PRINCIPAL */
+@media (max-width: 991.98px) { 
+    .accordion_custom .card-header h5 a span{
+        font-size: 14px;
+    }
+
+    #accordion{
+        float: left;
+    }
+
+    #btn_expand{
+        float: right;
+    }
 }
