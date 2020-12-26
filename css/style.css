@@ -150,3 +150,28 @@ a:hover{
         float: right;
     }
 }
+
+/* TELA DE RESPOSTAS DA PERGUNTA */
+.pergunta-usuario{
+    padding: 20px;
+}
+.resposta-pergunta{
+    padding: 20px;
+}
+
+#btn-responder{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#btn-responder span.material-icons{
+    align-self: center;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+@media (max-width: 575.90px) { 
+    .foto-usuario{
+        display: none;
+    }
+}
