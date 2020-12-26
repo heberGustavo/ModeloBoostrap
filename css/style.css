@@ -1,3 +1,6 @@
+/* BODY */
+
+
 /* PALETA DE CORES */
 
 .verde_claro {
@@ -115,4 +118,17 @@
     width: 30px;
     height: 30px;
     margin: 0 10px;
+}
+
+
+/* MODAL */
+
+.modal-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: 0;
+    text-align: center !important;
 }
