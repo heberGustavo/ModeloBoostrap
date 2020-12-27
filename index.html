@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -45,7 +47,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 btn-outline-success-search verde_escuro_background" type="submit"><i class="fas fa-search"></i></button>
+                <button class="verde_escuro_background btn btn-outline-success my-2 my-sm-0 btn-outline-success-search" type="submit"><i class="fas fa-search"></i></button>
                 <button data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-success my-2 my-sm-0 btn-outline-success-account verde_escuro_background" type="button">Sing in<i class="fas fa-user icon-language "></i></button>
                 <div class="card">
                     <img class="card-img-top-header" src="img/perfil.svg" alt="Card image cap">
@@ -211,26 +213,33 @@
         </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Modal Login -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <img class="img-logo-sing-in" src="img/logo.png" alt="">
                 <img class="sing-in-image" src="img/sign-in.jpg" alt="">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
                     <button type="button" class="close close-button-sign-in" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
                 </div>
                 <div class="modal-body">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control far fa-envelope" placeholder="Your Email" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="email" class="form-control" placeholder="Your email" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <input type="password" class="form-control" placeholder="Password" id="basic-url" aria-describedby="basic-addon3">
                     </div>
+                    <button type="button" class="btn btn-secondary button-sign-in">Sign in</button>
+                    <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-google icon-social-media"></i>Login with Google</button>
+                    <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-facebook-f icon-social-media"></i>Login with facebook</button>
+                    <p class="p-sign-in">Don’t have a account? <span>Register</span></p>
+                    <p class="p-sign-in"><span>Forgot Password?</span></p>
                 </div>
+
+
                 <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
@@ -238,6 +247,8 @@
             </div>
         </div>
     </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

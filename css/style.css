@@ -19,13 +19,14 @@
     color: transparent !important;
 }
 
-.btn-outline-success {
+
+/* .btn-outline-success {
     color: #27AE60 !important;
 }
 
 .btn-outline-success:hover {
     background-color: #27AE60 !important;
-}
+} */
 
 
 /* MENU LATERAL */
@@ -150,6 +151,10 @@ a:hover {
     margin: 0 0 0 5px;
 }
 
+.icon-social-media {
+    margin: 0 5px 0 0;
+}
+
 .card-img-top-header {
     width: 30px;
     height: 30px;
@@ -164,7 +169,7 @@ a:hover {
     font-size: 18px;
     position: absolute;
     right: 0;
-    top: 90px;
+    top: 120px;
     margin: 0 auto;
     font-weight: 800;
     left: 0;
@@ -173,7 +178,7 @@ a:hover {
 
 .modal-content {
     position: absolute;
-    width: 73%;
+    width: 70%;
     right: 0;
     left: 0;
     top: 30px;
@@ -188,10 +193,10 @@ a:hover {
 .img-logo-sing-in {
     position: absolute;
     z-index: 1;
-    height: 35px;
+    height: 30px;
     margin: 0 auto;
     right: 0;
-    top: 30px;
+    top: 70px;
     left: 0;
 }
 
@@ -199,6 +204,8 @@ a:hover {
     top: 5px;
     position: absolute;
     right: 8px;
+    color: #28a745;
+    text-shadow: 0 1px 0 #28a745;
 }
 
 .modal-header {
@@ -208,7 +215,7 @@ a:hover {
 
 .modal-body {
     position: absolute;
-    top: 140px;
+    top: 160px;
     width: 90%;
     margin: 0 auto;
     right: 0;
@@ -221,6 +228,43 @@ input.form-control {
 
 input.form-control::placeholder {
     color: #565454;
+}
+
+.button-sign-in {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 100%;
+    margin: 0px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 8px;
+}
+
+.btn.btn-outline-dark:hover {
+    background: none !important;
+    color: #000 !important;
+}
+
+.button-sign-google-facebook {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+}
+
+.p-sign-in {
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.p-sign-in span {
+    color: #28a745;
+    font-weight: bold;
 }
 
 
@@ -238,27 +282,30 @@ input.form-control::placeholder {
     }
 }
 
+
 /* TELA DE RESPOSTAS DA PERGUNTA */
-.pergunta-usuario{
-    padding: 20px;
-}
-.resposta-pergunta{
+
+.pergunta-usuario {
     padding: 20px;
 }
 
-#btn-responder{
+.resposta-pergunta {
+    padding: 20px;
+}
+
+#btn-responder {
     display: flex;
     margin-bottom: 10px;
 }
 
-#btn-responder span.material-icons{
+#btn-responder span.material-icons {
     align-self: center;
     font-size: 14px;
     margin-right: 5px;
 }
 
-@media (max-width: 575.90px) { 
-    .foto-usuario{
+@media (max-width: 575.90px) {
+    .foto-usuario {
         display: none;
     }
 }
