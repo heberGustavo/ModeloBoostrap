@@ -48,7 +48,7 @@
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
                 <button class="verde_escuro_background btn btn-outline-success my-2 my-sm-0 btn-outline-success-search" type="submit"><i class="fas fa-search"></i></button>
-                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-outline-success my-2 my-sm-0 btn-outline-success-account verde_escuro_background" type="button">Sing in<i class="fas fa-user icon-language "></i></button>
+                <button data-toggle="modal" id="modal-login" data-target="#login-modal" class="btn btn-outline-success my-2 my-sm-0 btn-outline-success-account verde_escuro_background" type="button">Sing in<i class="fas fa-user icon-language "></i></button>
                 <div class="card">
                     <img class="card-img-top-header" src="img/perfil.svg" alt="Card image cap">
                 </div>
@@ -213,41 +213,95 @@
         </div>
     </div>
 
-    <!-- Modal Login -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- START MODAL LOGIN -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <img class="img-logo-sing-in" src="img/logo.png" alt="">
                 <img class="sing-in-image" src="img/sign-in.jpg" alt="">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome a Desenvouve</h5>
                     <button type="button" class="close close-button-sign-in" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
                 </div>
                 <div class="modal-body">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Your email" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="email" class="form-control input-login" placeholder="Your email" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="password" class="form-control input-login" placeholder="Password" id="basic-url" aria-describedby="basic-addon3">
                     </div>
                     <button type="button" class="btn btn-secondary button-sign-in">Sign in</button>
                     <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-google icon-social-media"></i>Login with Google</button>
                     <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-facebook-f icon-social-media"></i>Login with facebook</button>
-                    <p class="p-sign-in">Don’t have a account? <span>Register</span></p>
+                    <p class="p-sign-in">Don’t have a account? <span id="modal-register" data-toggle="modal" data-target="#register-modal">Register</span></p>
                     <p class="p-sign-in"><span>Forgot Password?</span></p>
                 </div>
-
-
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
             </div>
         </div>
     </div>
 
+    <!--END MODAL LOGIN-->
+
+    <!--START MODAL REGISTER-->
+
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img class="img-logo-sing-in" src="img/logo.png" alt="">
+                <img class="sing-in-image" src="img/sign-in.jpg" alt="">
+                <div class="modal-header">
+                    <h5 class="modal-title-register" id="exampleModalLabel">Welcome a Desenvouve</h5>
+                    <button type="button" class="close close-button-sign-in" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-body-register">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control input-login" placeholder="Full name" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control input-login" placeholder="Your email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control input-login" placeholder="Password" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control input-login" placeholder="Password again" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    <button type="button" class="btn btn-secondary button-sign-in" id="button-register" data-toggle="modal" data-target="#confirmation-modal">Register</button>
+                    <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-google icon-social-media"></i>Login with Google</button>
+                    <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-facebook-f icon-social-media"></i>Login with facebook</button>
+                    <p class="p-sign-in">Access your contact <span id="modal-register" data-toggle="modal" data-target="#register-modal">Sign In</span></p>
+                    <p class="p-sign-in"><span>Forgot Password?</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END MODAL REGISTER-->
+
+    <!-- START MODAL CONFIRMATION -->
+    <div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img class="img-logo-sing-in" src="img/logo.png" alt="">
+                <img class="sing-in-image" src="img/sign-in.jpg" alt="">
+                <div class="modal-header">
+                    <h5 class="modal-title modal-title-confirmation" id="exampleModalLabel">Confirm your email!</h5>
+                    <button type="button" class="close close-button-sign-in" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <span class="span-confirmation"> Your account has been successfully registered. To complete the process please check your email for a validation request.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END MODAL CONFIRMATION -->
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
