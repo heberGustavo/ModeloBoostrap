@@ -89,16 +89,17 @@
     padding: 13px 0px;
 }
 
-.perguntas .item-pergunta {
+.item-pergunta {
     padding: 15px;
     border: 1px solid transparent;
 }
 
-.perguntas .item-pergunta:hover {
-    border: 1px solid #eee;
+.item-pergunta:hover {
+    border: 1px solid rgb(194, 194, 194);
+    background-color: rgb(240, 240, 240);
 }
 
-.perguntas .item-pergunta p {
+.item-pergunta p {
     margin-bottom: 5px;
 }
 
@@ -111,8 +112,8 @@ a:hover {
     color: #00CE81;
 }
 
-.perguntas .votos,
-.perguntas .respostas {
+.votos,
+.respostas {
     color: #00CE81;
 }
 
@@ -336,8 +337,16 @@ input.form-control::placeholder {
     padding: 20px;
 }
 
+.pergunta-usuario .votos-pergunta {
+    margin-bottom: 15px;
+}
+
 .resposta-pergunta {
     padding: 20px;
+}
+
+.resposta-pergunta .votos-respostas{
+    margin-bottom: 15px;
 }
 
 #btn-responder {
@@ -349,10 +358,4 @@ input.form-control::placeholder {
     align-self: center;
     font-size: 14px;
     margin-right: 5px;
-}
-
-@media (max-width: 575.90px) {
-    .foto-usuario {
-        display: none;
-    }
 }
