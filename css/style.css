@@ -316,21 +316,6 @@ input.form-control::placeholder {
 }
 
 
-/* MOBILE CARD PRINCIPAL */
-
-@media (max-width: 991.98px) {
-    .accordion_custom .card-header h5 a span {
-        font-size: 14px;
-    }
-    #accordion {
-        float: left;
-    }
-    #btn_expand {
-        float: right;
-    }
-}
-
-
 /* TELA DE RESPOSTAS DA PERGUNTA */
 
 .pergunta-usuario {
@@ -345,7 +330,7 @@ input.form-control::placeholder {
     padding: 20px;
 }
 
-.resposta-pergunta .votos-respostas{
+.resposta-pergunta .votos-respostas {
     margin-bottom: 15px;
 }
 
@@ -358,4 +343,59 @@ input.form-control::placeholder {
     align-self: center;
     font-size: 14px;
     margin-right: 5px;
+}
+
+
+/* FOOTER */
+
+.footer-desenvouve {
+    background: #28a745;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    padding: 0;
+    color: #fff !important;
+}
+
+.footer-desenvouve ul li a {
+    color: #fff !important;
+    font-weight: 200;
+}
+
+.logo-footer-desenvouve {
+    width: 120px;
+    position: absolute;
+    top: -10px;
+    height: 33px;
+    margin: 0px 20px;
+}
+
+.text-footer-desenvouve {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* PROFILE */
+
+.title-profile-desenvouve {
+    text-align: left;
+    margin: 15px 0;
+}
+
+
+/* MOBILE CARD PRINCIPAL */
+
+@media (max-width: 991.98px) {
+    .accordion_custom .card-header h5 a span {
+        font-size: 14px;
+    }
+    #accordion {
+        float: left;
+    }
+    #btn_expand {
+        float: right;
+    }
 }
