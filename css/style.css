@@ -120,6 +120,10 @@ a:hover {
 
 /* NAVBAR */
 
+.navbar {
+    margin: 0 0 2% 0;
+}
+
 .logo-img {
     width: 97px;
     margin: 0 15px;
