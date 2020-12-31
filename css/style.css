@@ -349,6 +349,10 @@ input.form-control::placeholder {
     margin-right: 5px;
 }
 
+.material-icons:hover {
+    color: #28a745;
+}
+
 
 /* FOOTER */
 
