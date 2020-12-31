@@ -353,6 +353,15 @@ input.form-control::placeholder {
     color: #28a745;
 }
 
+/* DADOS USUARIO */
+#perfil .form-control {
+    width: 100% !important;
+}
+
+.linhaAlterarSenha{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /* FOOTER */
 
