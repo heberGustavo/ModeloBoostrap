@@ -228,7 +228,7 @@ a:hover {
 
 .sing-in-image {
     position: relative;
-    height: 600px;
+    height: 550px;
 }
 
 .img-logo-sing-in {
@@ -540,7 +540,7 @@ input.form-control::placeholder {
         padding: 30px 0;
     }
     .modal-content {
-        width: 94%;
+        width: 90%;
     }
     /* PROFILE */
     .avatar.avatar-xl {
