@@ -22,19 +22,16 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img class="logo-img" href="index.html" src="img/logo.png">
 
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Language<i class="fas fa-globe icon-language"></i>
-                    </a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Linguagens<i class="fas fa-globe icon-language"></i>
+              </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Java<i class="fab fa-java icon-language"></i></a>
                         <a class="dropdown-item" href="#">Java Script<i class="fab fa-js-square icon-language"></i></a>
@@ -44,8 +41,9 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 btn-outline-success-search verde_escuro_background" type="submit"><i class="fas fa-search"></i></button>
-                <button class="btn btn-outline-success my-2 my-sm-0 btn-outline-success-account verde_escuro_background" type="submit">Sing in<i class="fas fa-user icon-language "></i></button>
+                <button class="verde_escuro_background btn btn-outline-success my-2 my-sm-0 btn-outline-success-search" type="submit"><i class="fas fa-search"></i></button>
+                <button data-toggle="modal" id="modal-login" data-target="#login-modal" class="btn btn-outline-success my-2 my-sm-0 btn-outline-success-account verde_escuro_background" type="button">Acessar<i class="fas fa-user icon-language "></i></button>
+
             </form>
         </div>
         <div class="card-user">
@@ -188,40 +186,154 @@
                 <div class="row">
                     <div class="col-md-12 item-pergunta">
                         <a href="resposta.html">
-                            <h6>Google Drive API 500 Error on Wordpress plugin</h6>
+                            <h6> Erro de API 500 do Google Drive no plug-in Wordpress </h6>
                         </a>
-                        <h6><small>Programação</small></h6>
-                        <span class="votos">0 votes</span> <span class="respostas">0 answers</span>
+                        <span class="votos">0 votos</span> <span class="respostas">0 Perguntas</span>
                     </div>
                     <div class="col-md-12 item-pergunta">
                         <a href="resposta.html">
-                            <h6>Google Drive API 500 Error on Wordpress plugin</h6>
+                            <h6> Erro de API 500 do Google Drive no plug-in Wordpress </h6>
                         </a>
-                        <span class="votos">0 votes</span> <span class="respostas">0 answers</span>
+                        <span class="votos">0 votos</span> <span class="respostas">0 Perguntas</span>
                     </div>
                     <div class="col-md-12 item-pergunta">
                         <a href="resposta.html">
-                            <h6>Google Drive API 500 Error on Wordpress plugin</h6>
+                            <h6> Erro de API 500 do Google Drive no plug-in Wordpress </h6>
                         </a>
-                        <span class="votos">0 votes</span> <span class="respostas">0 answers</span>
+                        <span class="votos">0 votos</span> <span class="respostas">0 Perguntas</span>
                     </div>
                     <div class="col-md-12 item-pergunta">
                         <a href="resposta.html">
-                            <h6>Google Drive API 500 Error on Wordpress plugin</h6>
+                            <h6> Erro de API 500 do Google Drive no plug-in Wordpress </h6>
                         </a>
-                        <span class="votos">0 votes</span> <span class="respostas">0 answers</span>
+                        <span class="votos">0 votos</span> <span class="respostas">0 Perguntas</span>
                     </div>
                     <div class="col-md-12 item-pergunta">
                         <a href="resposta.html">
-                            <h6>Google Drive API 500 Error on Wordpress plugin</h6>
+                            <h6> Erro de API 500 do Google Drive no plug-in Wordpress </h6>
                         </a>
-                        <span class="votos">0 votes</span> <span class="respostas">0 answers</span>
+                        <span class="votos">0 votos</span> <span class="respostas">0 Perguntas</span>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <!-- START MODAL LOGIN -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img class="img-logo-sing-in" src="img/logo.png" alt="">
+                <img class="sing-in-image" src="img/sign-in.jpg" alt="">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bem-vindo a Desenvouve</h5>
+                    <button type="button" class="close close-button-sign-in" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control input-login" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control input-login" placeholder="Senha" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    <a href="profile.html" class="btn btn-secondary button-sign-in">Acessar</a>
+                    <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-google icon-social-media"></i>Acessar com Google</button>
+                    <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-facebook-f icon-social-media"></i>Acessar com Facebook</button>
+                    <p class="p-sign-in">Ainda não tem uma conta? <span id="modal-register" data-toggle="modal" data-target="#register-modal">Registrar</span></p>
+                    <p class="p-sign-in"><span>Esqueceu sua senha?</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END MODAL LOGIN-->
+
+    <!--START MODAL REGISTER-->
+
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img class="img-logo-sing-in" src="img/logo.png" alt="">
+                <img class="sing-in-image" src="img/sign-in.jpg" alt="">
+                <div class="modal-header">
+                    <h5 class="modal-title-register" id="exampleModalLabel">Bem-vindo a Desenvouve</h5>
+                    <button type="button" class="close close-button-sign-in" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-body-register">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control input-login" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control input-login" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control input-login" placeholder="Senha" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control input-login" placeholder="Repita a senha" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    <button type="button" class="btn btn-secondary button-sign-in" id="button-register" data-toggle="modal" data-target="#confirmation-modal">Registrar</button>
+                    <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-google icon-social-media"></i>Acessar com Google</button>
+                    <button type="button" class="btn btn-outline-light button-sign-google-facebook"><i class="fab fa-facebook-f icon-social-media"></i>Acessar com Facebook</button>
+                    <p class="p-sign-in">Acessar sua conta <span id="modal-register" data-toggle="modal" data-target="#register-modal">Acessar</span></p>
+                    <p class="p-sign-in"><span>Esqueceu sua senha?</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END MODAL REGISTER-->
+
+    <!-- START MODAL CONFIRMATION -->
+    <div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img class="img-logo-sing-in" src="img/logo.png" alt="">
+                <img class="sing-in-image" src="img/sign-in.jpg" alt="">
+                <div class="modal-header">
+                    <h5 class="modal-title modal-title-confirmation" id="exampleModalLabel">Confirma seu email!</h5>
+                    <button type="button" class="close close-button-sign-in" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <span class="span-confirmation"> Sua conta foi registrada com sucesso. Para concluir o processo, verifique seu e-mail para uma solicitação de validação.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--END MODAL CONFIRMATION -->
+
+    <!-- START PAGINATION-->
+
+    <nav class=" d-flex justify-content-center container" aria-label="...">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <span class="page-link">Anterior</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active">
+                <span class="page-link">
+              2
+              <span class="sr-only">(current)</span>
+                </span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Próximo</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- END PAGINATION-->
+
+    <!-- START FOOTER-->
 
     <footer class="footer-desenvouve pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">

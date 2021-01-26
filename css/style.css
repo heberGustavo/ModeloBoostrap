@@ -126,6 +126,22 @@ a:hover {
 
 /* NAVBAR */
 
+.modal-dialog {
+    width: 450px !important;
+}
+
+.modal-open {
+    padding-right: 0 !important;
+}
+
+.modal-backdrop.show {
+    opacity: .7;
+}
+
+.modal.fade.show {
+    padding-right: 0 !important;
+}
+
 .navbar {
     margin: 0 0 2% 0;
 }
